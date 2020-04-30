@@ -7,13 +7,15 @@ public class ProductVO implements Serializable{
 	private static final long serialVersionUID = 1L;
 
 	private Integer id;
+	
 	private String name;
+	
 	private float price;
 
 	public ProductVO() {
 
-	}
-
+	}	
+	
 	public Integer getId() {
 		return id;
 	}
@@ -71,7 +73,4 @@ public class ProductVO implements Serializable{
 			return false;
 		return true;
 	}
-
-
-
 }

@@ -5,7 +5,70 @@
   <link rel="self" href="https://spring.io/blog.atom" />
   <id>http://spring.io/blog.atom</id>
   <icon>https://spring.io/favicon.ico</icon>
-  <updated>2020-04-30T18:28:54Z</updated>
+  <updated>2020-04-30T20:46:56Z</updated>
+  <entry>
+    <title>Spring for Apache Kafka 2.5.0 Release Candidate</title>
+    <link rel="alternate" href="https://spring.io/blog/2020/04/30/spring-for-apache-kafka-2-5-0-release-candidate" />
+    <category term="releases" label="Releases" />
+    <author>
+      <name>Gary Russell</name>
+    </author>
+    <id>tag:spring.io,2020-04-30:4049</id>
+    <updated>2020-04-30T20:46:56Z</updated>
+    <content type="html">&lt;div class="paragraph"&gt;
+&lt;p&gt;The &lt;code&gt;2.5.0.RC1&lt;/code&gt; release candidate is now avaialable in the &lt;a href="https://repo.spring.io/milestone"&gt;Spring milestone repo&lt;/a&gt;.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class="paragraph"&gt;
+&lt;p&gt;Highlights:&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class="ulist"&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;code&gt;kafka-clients&lt;/code&gt; 2.5.0 (alignment of version numbers is coincidental).&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Support for re-committing retryable offset commit exceptions for retained partitions when using cooperative rebalancing.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Support for the new "fetch-offset-request" procuder fencing (when brokers are 2.5 or higher), requiring fewer producers.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Support for static group membership.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;More integration with Micrometer.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Optional Delivery Attempts header.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;code&gt;RecoveringBatchErrorHandler&lt;/code&gt; can commit a partial batch and replay from failed record in a batch (with cooperation of the listener); this is now the default for a batch listener.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Default error handler for record listener is now the &lt;code&gt;SeekToCurrentErrorHandler&lt;/code&gt;.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Overridable producer properties in the &lt;code&gt;KafkaTemplate&lt;/code&gt; allowing multiple templates to use the same producer factory.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Simple &lt;code&gt;String&lt;/code&gt; serializer and deserializer are now provided.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;More flexibility to determin the type to create in the &lt;code&gt;JsonDeserializer&lt;/code&gt;.&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;
+&lt;div class="paragraph"&gt;
+&lt;p&gt;See the &lt;a href="https://docs.spring.io/spring-kafka/docs/2.5.0.RC1/reference/html/#whats-new-part"&gt;Reference manual "What&amp;#8217;s New?"&lt;/a&gt; for more information.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class="paragraph"&gt;
+&lt;p&gt;The final release will be published shortly before the upcoming Spring Boot 2.3 GA release; please try out the candidate.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class="paragraph"&gt;
+&lt;p&gt;&lt;a href="https://spring.io/projects/spring-kafka/"&gt;Project Page&lt;/a&gt; | &lt;a href="https://github.com/spring-projects/spring-kafka"&gt;GitHub&lt;/a&gt; | &lt;a href="https://github.com/spring-projects/spring-kafka/issues"&gt;Issues&lt;/a&gt; | &lt;a href="https://docs.spring.io/spring-kafka/docs/2.5.0.RC1/reference/html/"&gt;Documentation&lt;/a&gt; | &lt;a href="https://stackoverflow.com/questions/tagged/spring-kafka"&gt;Stack Overflow&lt;/a&gt; | &lt;a href="https://gitter.im/spring-projects/spring-kafka"&gt;Gitter&lt;/a&gt;&lt;/p&gt;
+&lt;/div&gt;
+&lt;!-- rendered by Sagan Renderer Service --&gt;</content>
+  </entry>
   <entry>
     <title>Spring Integration 5.3 RC1, 5.2.6 &amp; 5.1.10 Available</title>
     <link rel="alternate" href="https://spring.io/blog/2020/04/30/spring-integration-5-3-rc1-5-2-6-5-1-10-available" />
@@ -1787,85 +1850,6 @@ mvn -Pgraal clean package
 &lt;pre&gt;&lt;code class="prettyprint"&gt;2020-04-15 23:25:08.826  INFO 7692 --- [           main] c.example.reactive.ReactiveApplication   : Started ReactiveApplication in 0.099 seconds (JVM running for 0.103)
 &lt;/code&gt;&lt;/pre&gt;
 &lt;p&gt;Pretty cool, eh? The GraalVM native image builder is an excellent fit when paired with a cloud platform like CloudFoundry or Kubernetes. You can easily containerize the application and get it working on a cloud platform with a minimal footprint. Enjoy! And as always, we&amp;rsquo;d love to hear from you. Does this technology suit your use case? Questions? Comments? Feedback and sound off to &lt;a href="http://twitter.com/Springcentral"&gt;us on Twitter (@springcentral)&lt;/a&gt;.&lt;/p&gt;
-&lt;!-- rendered by Sagan Renderer Service --&gt;</content>
-  </entry>
-  <entry>
-    <title>Announcing the Spring Authorization Server</title>
-    <link rel="alternate" href="https://spring.io/blog/2020/04/15/announcing-the-spring-authorization-server" />
-    <category term="engineering" label="Engineering" />
-    <author>
-      <name>Rob Winch</name>
-    </author>
-    <id>tag:spring.io,2020-03-25:4010</id>
-    <updated>2020-04-15T12:09:05Z</updated>
-    <content type="html">&lt;div class="paragraph"&gt;
-&lt;p&gt;I am pleased to announce the &lt;a href="https://github.com/spring-projects-experimental/spring-authorization-server"&gt;Spring Authorization Server&lt;/a&gt; project. It is a community-driven project led by the Spring Security team and is focused on delivering &lt;a href="https://tools.ietf.org/html/rfc6749#section-1.1"&gt;Authorization Server&lt;/a&gt; support to the Spring community.&lt;/p&gt;
-&lt;/div&gt;
-&lt;div class="sect1"&gt;
-&lt;h2 id="a-foundation-for-success"&gt;&lt;a class="anchor" href="#a-foundation-for-success"&gt;&lt;/a&gt;A Foundation for Success&lt;/h2&gt;
-&lt;div class="sectionbody"&gt;
-&lt;div class="paragraph"&gt;
-&lt;p&gt;The story of how we got here is long, but the key takeaway is short and sweet: Spring would not be what it is without our amazing community.&lt;/p&gt;
-&lt;/div&gt;
-&lt;div class="paragraph"&gt;
-&lt;p&gt;Almost a decade ago, we brought in a community-driven, open-source project, &lt;a href="https://github.com/spring-projects/spring-security-oauth/"&gt;Spring Security OAuth&lt;/a&gt;, and made it part of the Spring portfolio of projects. Since its inception, it has evolved into a mature project that supports a large portion of the OAuth specification, including resource servers, clients, login, and the authorization server. It is no wonder that it has become the basis for &lt;a href="https://github.com/cloudfoundry/uaa"&gt;UAA&lt;/a&gt;, which, among other things, acts as the identity management service for all &lt;a href="https://www.cloudfoundry.org/"&gt;Cloud Foundry&lt;/a&gt; installations. The Spring Security OAuth project has become a model project and is a testament to what our wonderful community can accomplish.&lt;/p&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-&lt;div class="sect1"&gt;
-&lt;h2 id="building-on-community-success"&gt;&lt;a class="anchor" href="#building-on-community-success"&gt;&lt;/a&gt;Building on Community Success&lt;/h2&gt;
-&lt;div class="sectionbody"&gt;
-&lt;div class="paragraph"&gt;
-&lt;p&gt;Since the project’s inception, the OAuth world has evolved significantly. For that reason, we decided to build on our success as a community and
-&lt;a href="https://spring.io/blog/2018/01/30/next-generation-oauth-2-0-support-with-spring-security"&gt;rewrite Spring Security OAuth&lt;/a&gt; to better align Spring’s OAuth story, simplify the code base, and make Spring’s OAuth support more nimble.&lt;/p&gt;
-&lt;/div&gt;
-&lt;div class="paragraph"&gt;
-&lt;p&gt;First, the original OAuth support was done very early on and could not have anticipated all the different ways in which it would need to be used. This drove many Spring projects to provide their own OAuth support. By performing a rewrite, we were able to address the needs of the entire Spring portfolio and provide a single cohesive OAuth library.&lt;/p&gt;
-&lt;/div&gt;
-&lt;div class="paragraph"&gt;
-&lt;p&gt;Second, when the OAuth project was originally written, it included support for both OAuth 1.0 and OAuth 2.0. Since then, OAuth 2.0 has officially made &lt;a href="https://tools.ietf.org/html/rfc6749"&gt;OAuth 1.0 obsolete&lt;/a&gt;. For that reason, the new support was able to focus solely on OAuth 2.0, which has simplified the code significantly.&lt;/p&gt;
-&lt;/div&gt;
-&lt;div class="paragraph"&gt;
-&lt;p&gt;Third, the original project provided all of its own library support. Now, with many libraries to choose from, we were able to fold it into Spring Security proper by providing an abstraction around an existing library named Nimbus. By building on top of Nimbus, we were able to move more quickly and add more features, such as better support for JWT claims, OIDC, reactive programming, and so much more.&lt;/p&gt;
-&lt;/div&gt;
-&lt;div class="paragraph"&gt;
-&lt;p&gt;It’s impressive how the community has continued to build on its past success.&lt;/p&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-&lt;div class="sect1"&gt;
-&lt;h2 id="learning-from-our-community"&gt;&lt;a class="anchor" href="#learning-from-our-community"&gt;&lt;/a&gt;Learning from Our Community&lt;/h2&gt;
-&lt;div class="sectionbody"&gt;
-&lt;div class="paragraph"&gt;
-&lt;p&gt;Obviously, rewriting Spring Security’s OAuth support is a monumental effort. To begin, the team decided to split up the work into the client, the resource server, and the authorization server. As we progressed with the client and the resource server, we became more and more convinced that we shouldn’t provide authorization server support.&lt;/p&gt;
-&lt;/div&gt;
-&lt;div class="paragraph"&gt;
-&lt;p&gt;Since the Spring Security OAuth project was created, the number of authorization server choices has grown significantly. Additionally, we did not feel like creating an authorization server was a common scenario. Nor did we feel like it was appropriate to provide authorization support within a framework with no library support. After careful consideration, the Spring Security team decided that we would &lt;a href="https://spring.io/blog/2019/11/14/spring-security-oauth-2-0-roadmap-update"&gt;not formally support creating authorization servers&lt;/a&gt;.&lt;/p&gt;
-&lt;/div&gt;
-&lt;div class="paragraph"&gt;
-&lt;p&gt;Since our blog post, the community has spoken and we listened. From feedback on the blog, chatter in Gitter, and comments in GitHub, we were flooded with a consistent message: The Spring ecosystem needs support for an authorization server.&lt;/p&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-&lt;div class="sect1"&gt;
-&lt;h2 id="the-plan-going-forward"&gt;&lt;a class="anchor" href="#the-plan-going-forward"&gt;&lt;/a&gt;The Plan Going Forward&lt;/h2&gt;
-&lt;div class="sectionbody"&gt;
-&lt;div class="paragraph"&gt;
-&lt;p&gt;Until this moment, &lt;a href="https://github.com/spring-projects-experimental/spring-authorization-server"&gt;Spring Authorization Server&lt;/a&gt; was just an idea. Now, we would like to formally introduce Spring Authorization Server as a community-driven project led by the Spring Security team.&lt;/p&gt;
-&lt;/div&gt;
-&lt;div class="paragraph"&gt;
-&lt;p&gt;The project will start in Spring&amp;#8217;s experimental projects as an independent project so that it can evolve more rapidly. With your help, this project will grow in the same way that the original Spring Security OAuth project did.&lt;/p&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-&lt;div class="sect1"&gt;
-&lt;h2 id="getting-involved"&gt;&lt;a class="anchor" href="#getting-involved"&gt;&lt;/a&gt;Getting Involved&lt;/h2&gt;
-&lt;div class="sectionbody"&gt;
-&lt;div class="paragraph"&gt;
-&lt;p&gt;We would love to have you join us on this journey. If you would like to get involved, please read through the &lt;a href="https://github.com/spring-projects-experimental/spring-authorization-server/blob/master/CONTRIBUTING.adoc"&gt;CONTRIBUTING&lt;/a&gt; documentation. We cannot wait to hear from you, and, as always, thank you for being a part of the Spring community!&lt;/p&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-&lt;/div&gt;
 &lt;!-- rendered by Sagan Renderer Service --&gt;</content>
   </entry>
 </feed>
