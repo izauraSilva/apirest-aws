@@ -1,5 +1,0 @@
-package br.com.izatec.exception;
-
-public class ExceptionResponse {
-
-}

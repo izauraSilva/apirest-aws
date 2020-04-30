@@ -1,5 +1,0 @@
-package br.com.izatec.request.converters;
-
-public class NumberConverter {
-
-}
