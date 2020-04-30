@@ -1,0 +1,5 @@
+package br.com.izatec.repository;
+
+public interface ProductRepository extends JpaRepository<Product, Integer> {
+
+}

@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename package &apos;br.com.izatec.restwithaws&apos; to &apos;br.com.izatec&apos;&#x0D;&#x0A;- Original project: &apos;rest-with-aws&apos;&#x0D;&#x0A;- Original element: &apos;rest-with-aws/src/main/java/br.com.izatec.restwithaws&apos;&#x0D;&#x0A;- Renamed element: &apos;rest-with-aws/src/main/java/br.com.izatec&apos;&#x0D;&#x0A;- Update references to refactored element&#x0D;&#x0A;- Update textual occurrences in comments and strings" description="Rename package &apos;br.com.izatec.restwithaws&apos;" flags="589830" hierarchical="false" id="org.eclipse.jdt.ui.rename.package" input="/src\/main\/java&lt;br.com.izatec.restwithaws" name="br.com.izatec" qualified="false" references="true" stamp="1588213101378" textual="false" version="1.0"/>
+</session>
