@@ -5,7 +5,70 @@
   <link rel="self" href="https://spring.io/blog.atom" />
   <id>http://spring.io/blog.atom</id>
   <icon>https://spring.io/favicon.ico</icon>
-  <updated>2020-04-30T11:57:00Z</updated>
+  <updated>2020-04-30T18:28:54Z</updated>
+  <entry>
+    <title>Spring Integration 5.3 RC1, 5.2.6 &amp; 5.1.10 Available</title>
+    <link rel="alternate" href="https://spring.io/blog/2020/04/30/spring-integration-5-3-rc1-5-2-6-5-1-10-available" />
+    <category term="releases" label="Releases" />
+    <author>
+      <name>Artem Bilan</name>
+    </author>
+    <id>tag:spring.io,2020-04-30:4048</id>
+    <updated>2020-04-30T18:28:54Z</updated>
+    <content type="html">&lt;div class="paragraph"&gt;
+&lt;p&gt;I’m pleased to announce the &lt;a href="https://github.com/spring-projects/spring-integration/releases/tag/v5.3.0.RC"&gt;first&lt;/a&gt; (and the last) release candidate for Spring Integration &lt;code&gt;5.3&lt;/code&gt;.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class="paragraph"&gt;
+&lt;p&gt;This release ships several bug fixes, a bunch of new features and improvements and will be picked up by Spring Boot &lt;code&gt;2.3 RC1&lt;/code&gt;.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class="paragraph"&gt;
+&lt;p&gt;It can be downloaded from our &lt;a href="https://repo.spring.io/milestone"&gt;milestone repository&lt;/a&gt;:&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class="listingblock"&gt;
+&lt;div class="content"&gt;
+&lt;pre class="prettyprint highlight"&gt;&lt;code class="language-groovy" data-lang="groovy"&gt;compile 'org.springframework.integration:spring-integration-core:5.3.0.RC1'&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class="sect2"&gt;
+&lt;h3 id="the-most-important-new-features-are"&gt;&lt;a class="anchor" href="#the-most-important-new-features-are"&gt;&lt;/a&gt;The most important new features are:&lt;/h3&gt;
+&lt;div class="ulist"&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;The &lt;code&gt;MongoDbChangeStreamMessageProducer&lt;/code&gt; - a reactive &lt;code&gt;MessageProducerSupport&lt;/code&gt; implementation for the Spring Data &lt;code&gt;ReactiveMongoOperations.changeStream(String, ChangeStreamOptions, Class)&lt;/code&gt; API.
+This component produces a &lt;code&gt;Flux&lt;/code&gt; of messages with a &lt;code&gt;body&lt;/code&gt; of &lt;code&gt;ChangeStreamEvent&lt;/code&gt; as the payload by default and some change stream related headers (see &lt;code&gt;MongoHeaders&lt;/code&gt;).&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;The &lt;code&gt;ReactiveMessageSourceProducer&lt;/code&gt; - a reactive implementation of the &lt;code&gt;MessageProducerSupport&lt;/code&gt; to wrap a provided &lt;code&gt;MessageSource&lt;/code&gt; into a &lt;code&gt;Flux&lt;/code&gt; for on demand &lt;code&gt;receive()&lt;/code&gt; calls.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;The &lt;code&gt;ReceiveMessageAdvice&lt;/code&gt; - a former &lt;code&gt;AbstractMessageSourceAdvice&lt;/code&gt; is graduated now to more common advice approach which can be used also for the &lt;code&gt;PollableChannel.receive()&lt;/code&gt; proxying.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;The &lt;code&gt;TcpOutboundGateway&lt;/code&gt; now can work in an &lt;code&gt;async&lt;/code&gt; mode - you&amp;#8217;ll get an actual reply from the returned &lt;code&gt;Future&lt;/code&gt;.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;We also have applied a GitHub default community health.
+Check this out when you try to raise a new issue &lt;a href="https://github.com/spring-projects/spring-integration/issues/new/choose!" class="bare"&gt;https://github.com/spring-projects/spring-integration/issues/new/choose!&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;
+&lt;div class="paragraph"&gt;
+&lt;p&gt;See &lt;code&gt;What&amp;#8217;s New?&lt;/code&gt; in the &lt;a href="https://docs.spring.io/spring-integration/docs/5.3.0.RC1/reference/html/whats-new.html#whats-new"&gt;Reference Manual&lt;/a&gt; for more information.
+Also see a blog post for the previous &lt;a href="https://spring.io/blog/2020/03/11/spring-integration-5-3-milestone-3-available"&gt;Milestone 3&lt;/a&gt;.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class="paragraph"&gt;
+&lt;p&gt;We’re looking forward to your feedback for upcoming GA in May!&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class="paragraph"&gt;
+&lt;p&gt;In addition to this &lt;code&gt;5.3 RC1&lt;/code&gt; we also have released maintenance versions - &lt;code&gt;5.2.6&lt;/code&gt; &amp;amp; &lt;code&gt;5.1.10&lt;/code&gt; with some bug fixes and upgrades.
+Based on Spring Integration &lt;code&gt;5.3 RC1&lt;/code&gt; and Spring for Apache Kafka &lt;code&gt;2.5 RC1&lt;/code&gt; a &lt;code&gt;spring-integration-kafka-3.3.0.RC1&lt;/code&gt; was also released to pick up improvements and new feature from its "parents".&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class="paragraph"&gt;
+&lt;p&gt;&lt;a href="http://projects.spring.io/spring-integration/"&gt;Project Page&lt;/a&gt; | &lt;a href="https://github.com/spring-projects/spring-integration/issues"&gt;GitHub Issues&lt;/a&gt; | &lt;a href="https://github.com/spring-projects/spring-integration/blob/master/CONTRIBUTING.adoc"&gt;Contributing&lt;/a&gt; | &lt;a href="http://stackoverflow.com/questions/tagged/spring-integration"&gt;Help&lt;/a&gt; | &lt;a href="https://gitter.im/spring-projects/spring-integration"&gt;Chat&lt;/a&gt;&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;!-- rendered by Sagan Renderer Service --&gt;</content>
+  </entry>
   <entry>
     <title>Updates to Spring Versions</title>
     <link rel="alternate" href="https://spring.io/blog/2020/04/30/updates-to-spring-versions" />
@@ -1803,44 +1866,6 @@ mvn -Pgraal clean package
 &lt;/div&gt;
 &lt;/div&gt;
 &lt;/div&gt;
-&lt;!-- rendered by Sagan Renderer Service --&gt;</content>
-  </entry>
-  <entry>
-    <title>This Week in Spring - April 14th, 2020</title>
-    <link rel="alternate" href="https://spring.io/blog/2020/04/15/this-week-in-spring-april-14th-2020" />
-    <category term="engineering" label="Engineering" />
-    <author>
-      <name>Josh Long</name>
-    </author>
-    <id>tag:spring.io,2020-04-15:4029</id>
-    <updated>2020-04-15T00:20:26Z</updated>
-    <content type="html">&lt;p&gt;Hi, Spring fans! Welcome to another installment of &lt;em&gt;This Week in Spring&lt;/em&gt;! It&amp;rsquo;s been a crazy week so let&amp;rsquo;s delay not even one second longer! &lt;/p&gt;
-&lt;ul&gt;
-  &lt;li&gt;In last week&amp;rsquo;s &lt;a href="https://spring.io/blog/2020/04/10/a-bootiful-podcast-microsoft-s-kushagra-thapar-on-spring-data-cosmosdb"&gt;&lt;em&gt;A Bootiful Podcast&lt;/em&gt;, I talked with Microsoft’s Kushagra Thapar on Spring Data Cosmosdb&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;Have you seen the new &lt;a href="https://spring.io/blog/2020/04/09/spring-graal-native-0-6-0-released"&gt;Spring Graal Native 0.6.0 &lt;/a&gt; support?&lt;/li&gt;
-  &lt;li&gt;In last week&amp;rsquo;s &lt;a href="https://spring.io/blog/2020/04/07/spring-tips-the-spring-integration-kotlin-dsl"&gt;&lt;em&gt;Spring Tips&lt;/em&gt;, I looked at the Spring Integration Kotlin DSL&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;Want help on effectively pair programming remotely? &lt;a href="https://twitter.com/VMwareTanzu/status/1250168241147858947"&gt;Our experts are here to help&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href="https://twitter.com/RabbitMQ/status/1250099189297688581"&gt;This Month in RabbitMQ went out&lt;/a&gt; - don&amp;rsquo;t miss these roundups!&lt;/li&gt;
-  &lt;li&gt;A nice post looking at &lt;a href="https://twitter.com/cloudfoundry/status/1250095834852544513"&gt;when to Use Eirini, Quarks or KubeCF for Cloud Foundry and Kubernetes&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href="https://blogs.vmware.com/opensource/2020/04/14/apache-geode-a-quick-history/"&gt;Apache Geode: A Quick History&lt;/a&gt;. Apache Geode, the open source project that underpins the Gemfire in-memory data-grid, has had a long and storied road to where it is now. You can use it easily with Spring Boot and the Spring Data for Apache Geode project - I did a Spring Tips video on the &lt;a href="https://spring.io/blog/2019/02/13/spring-tips-apache-geode"&gt;topic a little while ago&lt;/a&gt;.&lt;/li&gt;
-  &lt;li&gt;SpringLive, our free virtual event, featured speakers from VMware, Microsoft, Confluent, Okta, Google, and more now has sessions that you can &lt;a href="https://t.co/mMPBgs3uVR"&gt; watch online &lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;We have exciting updates for application-level abstractions, build processes, and container-level abstraction. &lt;a href="https://t.co/TUf7KnwlSI"&gt;See what they are here&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;Curious about Spring Boot? What about Kubernetes? This Thursday (two days from now!), Spring Cloud team member Ryan Baxter will &lt;a href="https://twitter.com/springcloud/status/1249795822755119104"&gt;cover the basics on both&lt;/a&gt;.&lt;/li&gt;
-  &lt;li&gt;From &lt;a href="https://t.co/WtoHn4Nn46"&gt;&lt;em&gt;Forbes&lt;/em&gt;&lt;/a&gt; magazine: top developers agree: Java 14 makes code super-expressive. I did a Spring Tips on some of the features &lt;a href="https://spring.io/blog/2020/03/11/spring-tips-java-14-or-can-your-java-do-this"&gt;of Java 14 and their use with Spring&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;I hope you&amp;rsquo;ll join me and tons of other JVM ecosystem folks tomorrow for &lt;em&gt;AllTheTalks&lt;/em&gt;, &lt;a href="http://allthetalks.org"&gt;an online conference for you to watch while you wait for the plague to pass&lt;/a&gt;. The show is &lt;em&gt;tomorrow&lt;/em&gt;, Wednesday the 15th, 2020.&lt;/li&gt;
-  &lt;li&gt;&lt;a href="https://mp.weixin.qq.com/s/lmhFt9MhtNSps1HUNmuV5w"&gt;I liked this Chinese-language article introducing RabbitMQ &lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;Discover how RabbitMQ encourages opensource contribution by &lt;a href="https://twitter.com/RabbitMQ/status/1249087004257792012"&gt;prioritizing a considerate contribution process&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;The Steeltoe team has now released &lt;a href="https://github.com/SteeltoeOSS/steeltoe/releases/tag/3.0.0-m2"&gt; Steeltoe 3.0.0-m2&lt;/a&gt;! Think of Steeltoe as being a very useful, albeit less fully featured, Spring Cloud for .NET developers. It lets .NET developers interoperate with various SPring Cloud infrastructure]()&lt;/li&gt;
-  &lt;li&gt;The DZone Security zine has a nice post on using &lt;a href="https://dzone.com/articles/angular-7-spring-boot-jwt-authentication-example"&gt;Angular 7, Spring Boot and JWT-centric authentication &lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;Targeted to JDK 15: JEP 378: &lt;a href="https://openjdk.java.net/jeps/378"&gt;Text Blocks (Standard)&lt;/a&gt; will now officially land in Java 15.&lt;/li&gt;
-  &lt;li&gt;Oracle&amp;rsquo;s David Delabassee has a fantatic, albeit not strictly speaking related to Spring, article on &lt;a href="https://delabassee.com/OpenCVJava/"&gt;how to get the Mac and Linux builds of the OpenCV Java bindings to work &lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href="https://www.youtube.com/watch?v=bpbhpsnd0dw&amp;feature=share"&gt;Tanzu Application Catalog overview&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;Do you want to learn how to tie your cloud infrastructure capabilities to your containerized applications? The new &lt;em&gt;Integrating with Cloud Providers&lt;/em&gt; course on #KubeAcademy will teach you how. &lt;a href="https://t.co/IPjK1t6pHw"&gt;Learn more about the course here&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;Here&amp;rsquo;s another @springcloud issue that newcomers or firsttime contributors might find easy to fix &lt;a href="https://t.co/pxAzT6qFkK"&gt;https://t.co/pxAzT6qFkK&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;Also targeted for Java 15: &lt;a href="https://openjdk.java.net/jeps/377"&gt;JEP 377&lt;/a&gt; (ZGC), which is a scalable low-latency garbage collector&lt;/li&gt;
-  &lt;li&gt;The opensource team at VMWare interviewed me, if you&amp;rsquo;re interested. &lt;a href="https://blogs.vmware.com/opensource/2020/04/07/spring-development-josh-long-interview/"&gt;Spring Development: An Interview with Josh Long&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;Want to develop Spring Boot apps and secure them with OpenID Connect &amp;amp; OAuth2? Check out &lt;a href="https://www.youtube.com/watch?v=8VJNjMD9TG8&amp;feature=youtu.be"&gt;this video&lt;/a&gt; for a nice introduction!&lt;/li&gt;
-&lt;/ul&gt;
 &lt;!-- rendered by Sagan Renderer Service --&gt;</content>
   </entry>
 </feed>
