@@ -1,0 +1,12 @@
+package br.com.izatec.converter;
+
+import com.github.dozermapper.core.DozerBeanMapperBuilder;
+import com.github.dozermapper.core.Mapper;
+
+public class DozerConverter {
+	
+	public static Mapper mapper = DozerBeanMapperBuilder.buildDefault();
+	
+	
+
+}

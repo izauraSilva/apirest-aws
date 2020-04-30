@@ -2,3 +2,7 @@
 1588215485380	Rename package 'br.com.izatec.exception'
 1588215661735	Rename package 'br.com.izatec.exceptiion'
 1588250685155	Rename type 'OperationException'
+1588252662816	Copy compilation unit
+1588252694845	Rename type 'Product'
+1588264016065	Rename package 'br.com.izatec.restwithaws'
+1588264144175	Rename package 'br.com.izatec.converter.mockers'

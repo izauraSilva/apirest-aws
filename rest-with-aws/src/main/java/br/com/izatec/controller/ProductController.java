@@ -14,6 +14,7 @@ import org.springframework.web.bind.annotation.PutMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RestController;
 
+import br.com.izatec.data.vo.ProductVO;
 import br.com.izatec.entity.Product;
 import br.com.izatec.exception.UnsuportedOperationException;
 import br.com.izatec.request.converters.NumberConverter;
@@ -26,11 +27,11 @@ public class ProductController {
     private ProductService service;
      
     @GetMapping("/products")
-    public List<Product> list() {
+    public List<ProductVO> list() {
         return service.listAll();
     }
     
-    @GetMapping("/products/{id}")
+    /*@GetMapping("/products/{id}")
     public ResponseEntity<Product> get(@PathVariable String id) {
     	
     	if (!NumberConverter.isNumeric(id)) {
@@ -43,14 +44,14 @@ public class ProductController {
         } catch (NoSuchElementException e) {
             return new ResponseEntity<Product>(HttpStatus.NOT_FOUND);
         }      
-    }
+    }*/
    
-    @PostMapping("/products")
+    /*@PostMapping("/products")
     public void add(@RequestBody Product product) {
         service.save(product);
-    }
+    }*/
     
-    @PutMapping("/products/{id}")
+    /*@PutMapping("/products/{id}")
     public ResponseEntity<?> update(@RequestBody Product product, @PathVariable Integer id) {
         try {
             Product existProduct = service.get(id);
@@ -59,11 +60,11 @@ public class ProductController {
         } catch (NoSuchElementException e) {
             return new ResponseEntity<>(HttpStatus.NOT_FOUND);
         }      
-    }
+    }*/
     
-    @DeleteMapping("/products/{id}")
+    /*@DeleteMapping("/products/{id}")
     public void delete(@PathVariable Integer id) {
         service.delete(id);
-    }
+    }*/
     
 }

@@ -5,7 +5,7 @@
   <link rel="self" href="https://spring.io/blog.atom" />
   <id>http://spring.io/blog.atom</id>
   <icon>https://spring.io/favicon.ico</icon>
-  <updated>2020-04-30T11:57:54Z</updated>
+  <updated>2020-04-30T11:57:00Z</updated>
   <entry>
     <title>Updates to Spring Versions</title>
     <link rel="alternate" href="https://spring.io/blog/2020/04/30/updates-to-spring-versions" />
@@ -14,7 +14,7 @@
       <name>Rob Winch</name>
     </author>
     <id>tag:spring.io,2020-04-24:4042</id>
-    <updated>2020-04-30T11:57:54Z</updated>
+    <updated>2020-04-30T11:57:00Z</updated>
     <content type="html">&lt;div class="paragraph"&gt;
 &lt;p&gt;The Spring team has decided to change the versioning scheme for both &lt;a href="#release-train-version-changes"&gt;release trains&lt;/a&gt; and &lt;a href="#project-module-version-changes"&gt;project modules&lt;/a&gt;. These changes will be coming in the next release train and minor releases for each project. In fact, the changes are already present in &lt;a href="https://spring.io/blog/2020/04/17/spring-cloud-2020-0-0-m1-released"&gt;Spring Cloud 2020.0.0-M1&lt;/a&gt;. Maven and Gradle do not provide the exact same version ordering, but we are working with the Gradle team to ensure the Spring scheme ends up sorted in the same way with both tools.&lt;/p&gt;
 &lt;/div&gt;
@@ -61,7 +61,7 @@
 &lt;/ul&gt;
 &lt;/div&gt;
 &lt;div class="paragraph"&gt;
-&lt;p&gt;An example of versions in order would be &lt;code&gt;2020.0.0-M1&lt;/code&gt;, &lt;code&gt;2020.0.0-M2&lt;/code&gt;, &lt;code&gt;2020.0.0-RC1&lt;/code&gt;, &lt;code&gt;2020.0.0-SNAPSHOT&lt;/code&gt;, &lt;code&gt;2020.0.0&lt;/code&gt;, &lt;code&gt;2020.0.1-SNAPSHOT&lt;/code&gt;, &lt;code&gt;2020.0.1&lt;/code&gt;, &lt;code&gt;2020.1.0-SNAPSHOT&lt;/code&gt;, &lt;code&gt;2020.1.0-M1&lt;/code&gt;, &lt;code&gt;2020.1.0-M2&lt;/code&gt;, and so on.&lt;/p&gt;
+&lt;p&gt;An example of versions in order would be &lt;code&gt;2020.0.0-M1&lt;/code&gt;, &lt;code&gt;2020.0.0-M2&lt;/code&gt;, &lt;code&gt;2020.0.0-RC1&lt;/code&gt;, &lt;code&gt;2020.0.0-SNAPSHOT&lt;/code&gt;, &lt;code&gt;2020.0.0&lt;/code&gt;, &lt;code&gt;2020.0.1-SNAPSHOT&lt;/code&gt;, &lt;code&gt;2020.0.1&lt;/code&gt;,  &lt;code&gt;2020.1.0-M1&lt;/code&gt;, &lt;code&gt;2020.1.0-M2&lt;/code&gt;, &lt;code&gt;2020.1.0-RC1&lt;/code&gt;, &lt;code&gt;2020.1.0-SNAPSHOT&lt;/code&gt;, &lt;code&gt;2020.1.0&lt;/code&gt;, and so on.&lt;/p&gt;
 &lt;/div&gt;
 &lt;div class="paragraph"&gt;
 &lt;p&gt;This solves the problem of concerns around implications of backward compatibility, eases sorting for non-native english speakers, is easier to remember than name based releases, and eliminates challenges of spelling. Like many other projects that use calver, the Spring team may also keep referring to each train with a code name that follows the old conventions for their versions.&lt;/p&gt;
@@ -106,7 +106,7 @@
 &lt;/ul&gt;
 &lt;/div&gt;
 &lt;div class="paragraph"&gt;
-&lt;p&gt;An example of versions in order would be &lt;code&gt;2.3.0-M1&lt;/code&gt;, &lt;code&gt;2.3.0-M2&lt;/code&gt;, &lt;code&gt;2.3.0-RC1&lt;/code&gt;, &lt;code&gt;2.3.0-RC2&lt;/code&gt;, &lt;code&gt;2.3.0-SNAPSHOT&lt;/code&gt;, &lt;code&gt;2.3.0&lt;/code&gt;, &lt;code&gt;2.3.0&lt;/code&gt;, &lt;code&gt;2.3.1-SNAPSHOT&lt;/code&gt;, &lt;code&gt;2.3.1&lt;/code&gt;, &lt;code&gt;2.4.0-SNAPSHOT&lt;/code&gt;, and so on.&lt;/p&gt;
+&lt;p&gt;An example of versions in order would be &lt;code&gt;2.3.0-M1&lt;/code&gt;, &lt;code&gt;2.3.0-M2&lt;/code&gt;, &lt;code&gt;2.3.0-RC1&lt;/code&gt;, &lt;code&gt;2.3.0-RC2&lt;/code&gt;, &lt;code&gt;2.3.0-SNAPSHOT&lt;/code&gt;, &lt;code&gt;2.3.0&lt;/code&gt;, &lt;code&gt;2.3.1-SNAPSHOT&lt;/code&gt;, &lt;code&gt;2.3.1&lt;/code&gt;, &lt;code&gt;2.4.0-M1&lt;/code&gt;, &lt;code&gt;2.4.0-M2&lt;/code&gt;, &lt;code&gt;2.4.0-RC1&lt;/code&gt;, &lt;code&gt;2.4.0-SNAPSHOT&lt;/code&gt;, &lt;code&gt;2.4.0&lt;/code&gt;, and so on.&lt;/p&gt;
 &lt;/div&gt;
 &lt;h1 id="conclusion" class="sect0"&gt;&lt;a class="anchor" href="#conclusion"&gt;&lt;/a&gt;Conclusion&lt;/h1&gt;
 &lt;div class="paragraph"&gt;
