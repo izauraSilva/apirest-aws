@@ -15,8 +15,6 @@ import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RestController;
 
 import br.com.izatec.entity.Product;
-import br.com.izatec.exception.UnsuportedOperationException;
-import br.com.izatec.request.converters.NumberConverter;
 import br.com.izatec.service.ProductService;
 
 @RestController
@@ -31,14 +29,9 @@ public class ProductController {
     }
     
     @GetMapping("/products/{id}")
-    public ResponseEntity<Product> get(@PathVariable String id) {
-    	
-    	if (!NumberConverter.isNumeric(id)) {
-    		throw new UnsuportedOperationException("Please set a numeric value");
-    	}
-    	
+    public ResponseEntity<Product> get(@PathVariable Integer id) {
         try {
-            Product product = service.get(Integer.valueOf(id));
+            Product product = service.get(id);
             return new ResponseEntity<Product>(product, HttpStatus.OK);
         } catch (NoSuchElementException e) {
             return new ResponseEntity<Product>(HttpStatus.NOT_FOUND);
