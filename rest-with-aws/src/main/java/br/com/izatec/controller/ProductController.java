@@ -15,7 +15,6 @@ import br.com.izatec.exception.ResourceNotFoundException;
 import br.com.izatec.exception.UnsuportedOperationException;
 import br.com.izatec.request.converters.NumberConverter;
 import br.com.izatec.service.ProductService;
-import io.swagger.annotations.Api;
 
 @RestController
 public class ProductController {
